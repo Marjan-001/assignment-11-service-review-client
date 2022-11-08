@@ -1,13 +1,37 @@
 
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assests/Images/logo.png'
+import { FaUser } from "react-icons/fa";
+import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch();
+    }
 
 
     const menuItems = <>
         <li className='font-semibold mb-4 '><Link to='/'>Home</Link></li>
+
+        {
+            user?.email ?
+                <>
+
+                    <li className='font-semibold mb-4'>
+                        <button onClick={handleLogOut} className='btn-ghost'>Sign Out</button>
+                    </li>
+                </>
+                :
+                <>
+                    <li className='font-semibold mb-4'><Link to='/login'>Login</Link></li>
+                    <li className='font-semibold mb-4 '><Link to='/signup'>SignUp</Link></li></>
+        }
 
     </>
 
@@ -36,9 +60,17 @@ const Header = () => {
                 </ul>
             </div>
             <div >
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar mb-4">
-                    <div className="w-10 rounded-full">
-                        <img src="https://placeimg.com/80/80/people" alt='' />
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar  mb-4">
+                    <div className='w-24 rounded-full' >
+                        {user?.photoURL ?
+                            <img
+
+
+                                src={user?.photoURL} alt='' />
+
+                            :
+                            <FaUser></FaUser>
+                        }
                     </div>
                 </label>
             </div>

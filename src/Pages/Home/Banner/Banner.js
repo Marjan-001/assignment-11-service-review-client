@@ -4,7 +4,7 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div className='relative w-full bannerimg'>
+        <div className='relative w-full mx-auto bannerimg'>
             <img className=' w-screen' src={banner} alt="" />
             <div className='absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4'>
 
