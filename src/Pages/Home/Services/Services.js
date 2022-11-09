@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import ServiceCard from './ServiceCard';
 
 const Services = () => {
@@ -24,7 +26,12 @@ const Services = () => {
                         service={service}
                     ></ServiceCard>)
                 }
+
             </div>
+            <div className=' py-10  flex flex-col items-center'>
+                <Link to='/allservice'> <button className='btn btn-error '>See All</button></Link>
+            </div>
+
 
         </div>
     );
