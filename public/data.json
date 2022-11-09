@@ -1,0 +1,96 @@
+[
+    {
+        "service_id": "04",
+        "title": "Skin Care Consultation",
+        "img": "https://images.pexels.com/photos/10712765/pexels-photo-10712765.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "2000.00",
+        "description": "The Skin Care Consultation will take you on a powerful journey to bring out the most beautiful you. Enhance your natural beauty with gorgeous haircut and hair color recommendations. Discover the most effective make-up products to reinvigorate your look. You’re going to love the way you look!",
+        "facility": [
+            {
+                "name": "Skin Related Consulting",
+                "details": "Determining your skin type and what your skin needs.Provides list of skin care products and skin routine. Visual beauty board expressing your personal beauty style."
+            },
+            {
+                "name": "Hair Related Consulting",
+                "details": "Decision of hair type and what your hair needs.Hair care routine and hair products details. Hair styling that suit your looks."
+            }
+        ]
+    },
+    {
+        "service_id": "05",
+        "title": "Shopping Consultation",
+        "img": "https://images.pexels.com/photos/3965548/pexels-photo-3965548.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "1000.00",
+        "description": "Say goodbye to stressful shopping! I’ll be with you every step of the way, guiding you to the ideal clothing for you based on your personal style and budget. Together, we will assess each piece to find the most flattering looks for you. Hello dream wardrobe!",
+        "facility": [
+            {
+                "name": "Personal Shopping",
+                "details": "It includes Personalized shopping plan based on your style and budget,Shopping together for new clothing, shoes, and accessories,Full evaluation of each item,Recommendation of items to purchase and items to forego."
+            },
+            {
+                "name": "Online Shopping",
+                "details": "Online shopping based on your style and budget,Multiple options of each item on your wishlist,Money saving coupon codes and deals whenever available,Personalized notes and recommendations."
+            }
+        ]
+    },
+    {
+        "service_id": "01",
+        "title": "Personal Styling",
+        "img": "https://images.pexels.com/photos/7755518/pexels-photo-7755518.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "2000.00",
+        "description": "Discover fresh ways to wear your wardrobe! I will create polished, put together outfits using your clothing, shoes, and accessories. Bonus! I’ll arrange your new outfits in your own personal look book. Do not spend another morning wondering what to wear!",
+        "facility": [
+            {
+                "name": "Personal Styling",
+                "details": "Complete, styled outfits,Photograph of each outfitOutfits arranged in a digital lookbook, accessible anywhere."
+            }
+        ]
+    },
+    {
+        "service_id": "02",
+        "title": "Closet Editing",
+        "img": "https://images.pexels.com/photos/5705490/pexels-photo-5705490.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "1500.00",
+        "description": "Time to simplify your wardrobe! Whether you have too much or not enough in your wardrobe, I will educate you on the best clothing for your body, coloring, and style, and help you rework or eliminate the rest. Finally achieve closet clarity!",
+        "facility": [
+            {
+                "name": "Personal Closet Edit",
+                "details": "Evaluation of each item in your closet,Tailoring notes for the pieces that need to be altered to fit properly,Garments rearranged according to type and color,Delivery of unwanted items to a local charity."
+            }
+        ]
+    },
+    {
+        "service_id": "03",
+        "title": "Fashion Consultation",
+        "img": "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "3000.00",
+        "description": "The Fashion Consultation is the definitive, foundational experience for you to learn how to authentically express yourself through fashion. I will guide you through a series of questions and exercises to help you discover your personal style and learn how to dress your best with the body shape and coloring you naturally possess. Get ready for a life changing experience!",
+        "facility": [
+            {
+                "name": "Personal Fashion Consultation",
+                "details": "Personal fashion consultation will define your own personal style guideline and list of stores and labels true to you personal style."
+            },
+            {
+                "name": "Group Fashion Consultation",
+                "details": "Through this new, group edition of the Fashion Consultation, you can gather your favorite ladies and go on a fashion journey together!I'll be your guide, leading your group through a series of questions and exercises to help you discover your personal style and learn how to dress your best with the body shape and coloring you naturally possess. Get ready for a fun, engaging, life changing experience! Please note this service is for groups of 2-5 women."
+            }
+        ]
+    },
+    {
+        "service_id": "06",
+        "title": "Beauty Appointment",
+        "img": "https://images.pexels.com/photos/6648488/pexels-photo-6648488.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "2000.00",
+        "description": "Ready to up your beauty game in a big way? I’ll be your beauty guide, selecting the ideal make-up products to create a stunning beauty look for you. Get ready to wow!",
+        "facility": [
+            {
+                "name": "Casual looks",
+                "details": "Extensive selection of ideal make-up products,Recommendation of make-up shades that compliment your coloring,Product testing to select the perfect shades for you,election of nurturing skin care products."
+            },
+            {
+                "name": "Party looks",
+                "details": "Extensive selection of ideal make-up products,Recommendation of make-up shades that compliment your coloring,Product testing to select the perfect shades for you,election of nurturing skin care products."
+            }
+        ]
+    }
+]
