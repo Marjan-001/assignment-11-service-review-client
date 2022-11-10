@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import ReviewRow from './ReviewRow';
 
 const Review = ({ id }) => {
 
     const [reviews, setReview] = useState([]);
+
 
     useEffect(() => {
         fetch(`http://localhost:5000/review?serviceId=${id}`)
@@ -10,9 +12,30 @@ const Review = ({ id }) => {
             .then(data => setReview(data))
 
     }, [id])
+
     return (
         <div>
-            <h2>{reviews.length}</h2>
+            <h2 className="text-3xl text-rose-600">Total Reviews {reviews.length} </h2>
+            <div className="overflow-x-auto w-full">
+                <table className="table w-full">
+                    <thead>
+                        <tr>
+                            <th>
+                            </th>
+                            <th>Name</th>
+                            <th>Service Name</th>
+                            <th>Review</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {
+                            reviews.map(rev => <ReviewRow rev={rev}></ReviewRow>)
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 };
