@@ -1,3 +1,16 @@
+### Objective of the Project
+This project is based on a service review website. My website is created for a person who provide personal styling/fashion consultation. And my website name is Glam Girl
+
+### Features of the Website
+
+* See the services with details
+* Add service
+* See other people review and add/update your own review
+* Authentication with jwt token
+### Frameworks
+This website is designed using tailwind css and daisy ui
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
