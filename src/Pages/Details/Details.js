@@ -1,4 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
+import Review from "./Review/Review";
 // import Review from "./Review/Review";
 
 
@@ -32,7 +33,7 @@ const Details = () => {
                     </div>
                 </div>
             </div>
-            {/* <Review></Review> */}
+            <Review id={_id}></Review>
             <div className=' py-10  flex flex-col items-center'>
                 <Link to={`/postreview/${_id}`}> <button className='btn btn-error '>Write Review</button></Link>
             </div>
