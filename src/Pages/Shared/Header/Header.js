@@ -32,6 +32,7 @@ const Header = () => {
                     <li className='font-semibold mb-4'><Link to='/login'>Login</Link></li>
                     <li className='font-semibold mb-4 '><Link to='/signup'>SignUp</Link></li></>
         }
+        <li className='font-semibold mb-4 '><Link to='/myreview'>My Review</Link></li>
         <li className='font-semibold mb-4 '><Link to='/blog'>Blog</Link></li>
 
     </>

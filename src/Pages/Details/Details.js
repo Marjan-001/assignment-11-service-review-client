@@ -1,9 +1,10 @@
 import { Link, useLoaderData } from "react-router-dom";
+// import Review from "./Review/Review";
 
 
 const Details = () => {
 
-    const { title, img, description, price, facility } = useLoaderData();
+    const { _id, title, img, description, price, facility } = useLoaderData();
 
 
     return (
@@ -30,6 +31,10 @@ const Details = () => {
                         <Link to='/'><button className="btn btn-error">Back to Home</button></Link>
                     </div>
                 </div>
+            </div>
+            {/* <Review></Review> */}
+            <div className=' py-10  flex flex-col items-center'>
+                <Link to={`/postreview/${_id}`}> <button className='btn btn-error '>Write Review</button></Link>
             </div>
 
         </div>
