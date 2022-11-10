@@ -8,7 +8,7 @@ const MyReview = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myreview?email=${user?.email}`,
+        fetch(`https://assignment-11-service-review-server.vercel.app/myreview?email=${user?.email}`,
 
             {
 
@@ -29,7 +29,7 @@ const MyReview = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to cancel this Review');
         if (proceed) {
-            fetch(`http://localhost:5000/myreview/${id}`, {
+            fetch(`https://assignment-11-service-review-server.vercel.app/myreview/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -45,7 +45,7 @@ const MyReview = () => {
     }
 
     // const handleStatusUpdate = id => {
-    //     fetch(`http://localhost:5000/myreview/${id}`, {
+    //     fetch(`https://assignment-11-service-review-server.vercel.app/myreview/${id}`, {
     //         method: 'PATCH',
     //         headers: {
     //             'content-type': 'application/json'

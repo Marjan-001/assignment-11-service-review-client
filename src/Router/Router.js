@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             {
                 path: '/services/:id',
                 element: <Details></Details>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-11-service-review-server.vercel.app/services/${params.id}`)
             },
             {
                 path: '/blog',
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
             {
                 path: '/postreview/:id',
                 element: <PostReview></PostReview>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-11-service-review-server.vercel.app/services/${params.id}`)
             },
             {
                 path: '/myreview',
@@ -58,7 +58,7 @@ const router = createBrowserRouter([
             // {
             //     path: '/reviews/:id',
             //     element: <Review></Review>,
-            //     loader: ({ params }) => fetch(`http://localhost:5000/reviews/${params.id}`)
+            //     loader: ({ params }) => fetch(`https://assignment-11-service-review-server.vercel.app/reviews/${params.id}`)
             // }
         ]
     }

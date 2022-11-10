@@ -7,7 +7,7 @@ const Review = ({ id }) => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/review?serviceId=${id}`)
+        fetch(`https://assignment-11-service-review-server.vercel.app/review?serviceId=${id}`)
             .then(res => res.json())
             .then(data => setReview(data))
 
