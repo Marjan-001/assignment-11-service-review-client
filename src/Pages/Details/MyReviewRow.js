@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const MyReviewRow = ({ order, handleDelete }) => {
 
-    const { _id, serviceName, email, customer, price, service, photo, message } = order;
+    const { _id, serviceName, phone, email, customer, price, service, photo, message } = order;
     const [orderService, setOrderService] = useState({})
     useEffect(() => {
         fetch(`https://assignment-11-service-review-server.vercel.app/services/${service}`)
@@ -28,6 +30,7 @@ const MyReviewRow = ({ order, handleDelete }) => {
                     <div>
                         <div className="font-bold">{customer}</div>
                         <div className="text-sm opacity-50">{email}</div>
+                        <div className="text-sm opacity-50">{phone}</div>
                     </div>
                 </div>
             </td>
@@ -37,8 +40,11 @@ const MyReviewRow = ({ order, handleDelete }) => {
                 <span className="badge badge-ghost badge-sm">${price}</span>
             </td>
             <td>{message}</td>
-
+            <div className='py-8'>
+                <Link className='btn btn-error' to={`/update/${service}`}><button>Edit Review</button> </Link>
+            </div>
         </tr>
+
     );
 };
 
