@@ -47,7 +47,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/postreview/:id',
-                element: <PostReview></PostReview>,
+                element: <PrivateRoute> <PostReview></PostReview></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://assignment-11-service-review-server.vercel.app/services/${params.id}`)
             },
             {

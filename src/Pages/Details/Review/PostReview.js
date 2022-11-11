@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
 
 const PostReview = () => {
     const { _id, title, price } = useLoaderData();
     const { user } = useContext(AuthContext);
+    useTitle('Write Review');
 
     const handlePlaceOrder = event => {
         event.preventDefault();

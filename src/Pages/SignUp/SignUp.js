@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import useTitle from '../../hooks/useTitle';
 import { AuthContext } from '../Contexts/AuthProvider/AuthProvider';
 
 const SignUp = () => {
@@ -6,6 +7,7 @@ const SignUp = () => {
 
 
     const { createUser, updateUserProfile } = useContext(AuthContext);
+    useTitle('Signup')
     const handleSignUp = event => {
         event.preventDefault();
         const form = event.target;

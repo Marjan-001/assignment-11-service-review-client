@@ -1,4 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 import Review from "./Review/Review";
 // import Review from "./Review/Review";
 
@@ -6,7 +7,7 @@ import Review from "./Review/Review";
 const Details = () => {
 
     const { _id, title, img, description, price, facility } = useLoaderData();
-
+    useTitle('service details')
 
     return (
         <div>

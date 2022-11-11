@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import { GoogleAuthProvider } from 'firebase/auth';
 import { AuthContext } from '../Contexts/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 
 
@@ -15,6 +16,7 @@ const Login = () => {
     const { providerLogin } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
+    useTitle('Login')
 
     const from = location.state?.from?.pathname || '/';
 
@@ -25,6 +27,9 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
+
+
+
         signIn(email, password)
             .then(result => {
                 const user = result.user;

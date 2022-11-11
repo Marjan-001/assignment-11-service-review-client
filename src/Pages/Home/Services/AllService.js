@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../../hooks/useTitle';
 import AllServiceCard from './AllServiceCard';
 
 const AllService = () => {
+
     const [allservice, setAllService] = useState([]);
+
+    useTitle("All services")
     useEffect(() => {
         fetch('https://assignment-11-service-review-server.vercel.app/allservices')
             .then(res => res.json())
