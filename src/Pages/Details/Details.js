@@ -23,10 +23,10 @@ const Details = () => {
                         <h1 className="text-5xl  text-rose-600 font-bold"> {title ? title : 'No title'}</h1>
                         <p className="py-6  text-rose-900">{description ? description : 'nothing'}</p>
                         <h4 className="text-3xl  text-rose-600 font-bold"> Facilities</h4>
-                        <p className="py-6  text-rose-600">{facility?.name ? facility[0].name : 'not added'}</p>
-                        <p className="py-2 text-rose-900">{facility?.details ? facility[0].details : 'not added'}</p>
-                        <p className="py-6  text-rose-600">{facility?.name ? facility[1].name : 'not added'}</p>
-                        <p className="py-2 text-rose-900">{facility?.details ? facility[1].details : 'not added'}</p>
+                        <p className="py-6  text-rose-600">{facility ? facility[0].name : 'not added'}</p>
+                        <p className="py-2 text-rose-900">{facility ? facility[0].details : 'not added'}</p>
+                        <p className="py-6  text-rose-600">{facility ? facility[1].name : 'not added'}</p>
+                        <p className="py-2 text-rose-900">{facility ? facility[1].details : 'not added'}</p>
 
                         <p className="text-rose-600 py-4 text-2xl">Price:{price}</p>
 

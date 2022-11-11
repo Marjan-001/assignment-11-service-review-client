@@ -6,7 +6,7 @@ import MyReviewRow from './MyReviewRow';
 const MyReview = () => {
     const { user } = useContext(AuthContext);
     const [myreviews, setMyreviews] = useState([])
-    useTitle('My Review');
+    useTitle('Glam Girl/My Review');
 
 
     useEffect(() => {
