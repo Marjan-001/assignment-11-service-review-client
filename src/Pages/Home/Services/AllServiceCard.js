@@ -18,7 +18,7 @@ const AllServiceCard = ({ ser }) => {
                 <h2 className="card-title">{title}</h2>
 
                 <p className='text-2xl text-rose-600 font-semibold'>Price:{price} </p>
-                <p className='text-xl text-rose-900 py-0 '>Description:{description.slice(100)} </p>
+                <p className='text-xl text-rose-900 py-0 '>Description:{description?.slice(0, 100)} </p>
                 <div className="card-actions justify-end">
 
                     <Link to={`/services/${_id}`}>

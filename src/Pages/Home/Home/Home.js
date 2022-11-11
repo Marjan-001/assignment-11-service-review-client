@@ -6,7 +6,7 @@ import WhyPage from '../WhyPage/WhyPage';
 import RecentWork from './RecentWork/RecentWork';
 
 const Home = () => {
-    useTitle('Home')
+    useTitle('Glam Girl/Home')
     return (
         <div>
             <Banner></Banner>

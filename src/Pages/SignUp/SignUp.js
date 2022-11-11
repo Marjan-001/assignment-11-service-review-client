@@ -7,7 +7,7 @@ const SignUp = () => {
 
 
     const { createUser, updateUserProfile } = useContext(AuthContext);
-    useTitle('Signup')
+    useTitle('Glam Girl/Signup')
     const handleSignUp = event => {
         event.preventDefault();
         const form = event.target;

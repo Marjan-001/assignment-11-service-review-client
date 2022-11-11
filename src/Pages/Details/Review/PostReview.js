@@ -7,7 +7,7 @@ import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 const PostReview = () => {
     const { _id, title, price } = useLoaderData();
     const { user } = useContext(AuthContext);
-    useTitle('Write Review');
+    useTitle('Glam Girl/Write Review');
 
     const handlePlaceOrder = event => {
         event.preventDefault();

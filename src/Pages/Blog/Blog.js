@@ -2,7 +2,7 @@ import React from 'react';
 import useTitle from '../../hooks/useTitle';
 
 const Blog = () => {
-    useTitle('Blog')
+    useTitle('Glam Girl/Blog')
     return (
         <div >
             <h2 className='text-center text-3xl font-bold text-rose-600 py-10'>My Blog</h2>

@@ -16,7 +16,7 @@ const Login = () => {
     const { providerLogin } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
-    useTitle('Login')
+    useTitle('Glam Girl/Login')
 
     const from = location.state?.from?.pathname || '/';
 
