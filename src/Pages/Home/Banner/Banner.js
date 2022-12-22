@@ -3,23 +3,17 @@ import banner from '../../../assests/Images/Banner/Banner-2.jpg'
 import './Banner.css'
 
 const Banner = () => {
+
     return (
-        <div className='relative w-full mx-auto bannerimg'>
-            <img className=' w-screen' src={banner} alt="" />
-            <div className='absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4'>
+        <div className="hero mx-auto  bg-rose-100">
+            <div className="hero-content flex-col lg:flex-row-reverse">
+                <img src={banner} className=" max-w-sm rounded-lg shadow-2xl" alt='' />
+                <div>
+                    <h1 className="text-3xl  text-rose-600 lg:text-5xl font-bold">Hello there!</h1>
+                    <p className="py-6 text-xl text-rose-600 lg:text-3xl font-semibold text-justify">Welcome to my website glam girl. I,m Stella. A fashion shopping / beauty loving personal stylist passionate about helping you love the way you look.</p>
 
-                <h2 className='text-4xl text-rose-900 md:text-7xl  mb-8 font-semibold '>Hey beautiful</h2>
-                <div className="absolute flex justify-end transform w-2/5 -translate-y-1/2  left-24 top-64">
-
-                    <p className=' text-rose-900 text-2xl mt-48 md:mt-12 text-left '>
-
-                        Welcome to my website glam girl. I,m Stella. A fashion shopping / beauty loving personal stylist passionate about helping you love the way you look.
-
-                    </p>
                 </div>
-
             </div>
-
         </div>
     );
 };
