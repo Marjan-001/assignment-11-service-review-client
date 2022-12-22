@@ -65,15 +65,15 @@ const Header = () => {
             </div>
             <div >
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar  mb-4">
-                    <div className='w-24 rounded-full' >
-                        {user?.photoURL ?
+                    <div className='w-24 mr-24 rounded-full' >
+                        {user?.email?.photoURL ?
                             <img
 
 
                                 src={user?.photoURL} alt='' />
 
                             :
-                            <FaUser></FaUser>
+                            <></>
                         }
                     </div>
                 </label>

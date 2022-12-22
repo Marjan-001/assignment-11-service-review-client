@@ -1,0 +1,11 @@
+.img-container img {
+
+    transition: transform 0.3s;
+}
+
+.img-container img:hover {
+    transform: scale(1.5);
+    height: 50vh;
+
+
+}
